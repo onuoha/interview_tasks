@@ -23,7 +23,7 @@ The endpoint should be reachable via /grid-power-analysis/. You are free to use 
 
 You can use any Python framework you like for the REST API (Flask, DRF, Bottle). 
 
-After creating the API, you need to expand the provided simulation script by adding more nodes to it. One more medium / low voltage transformer needs to be added to the medium voltage bus, and on the low voltage side one load, one PV plant (that consists of 5 PVs, all on the same bus) and one external connection. The active and reactive power values from these nodes need to be reported via the endpoint /grid-power-analysis/ that was implemented on the previous step.
+After creating the API, you need to expand the provided simulation script by adding more nodes to it. One more medium / low voltage transformer needs to be added to the medium voltage bus, and on the low voltage side one load, one PV plant (that consists of individual 5 PVs, all connected on a separate bus and not coupled with the load) and one external connection. The active and reactive power values from these nodes need to be reported via the endpoint /grid-power-analysis/ that was implemented on the previous step.
 
 In order to submit your solution to this task a fork of this repo has to be created, and the solution can be committed to the fork.
 
