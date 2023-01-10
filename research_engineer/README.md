@@ -7,9 +7,7 @@ Task breakdown:
 #9. Click the 'SEND' button to view Pretty JSON result.
 
 
-Part b:
-  
-Tasks:
+Extra tasks to be completed:
 1. Group nodes
 2. Add a medium Trafo to b2
 3. Add load to b3
