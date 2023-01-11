@@ -57,7 +57,20 @@ def simresult():
     psys = pd.concat([myloads, mygen, myext_grid], axis=0)
     # Converts dataframe into a dictionary required for jsonify module of Flask
     simres = psys.to_dict(orient = 'index')
-    return simres
+    # Block of code to group the elements
+    loads = {}
+    generator = {}
+    external_grid = {}
+    sys = {}
+    for i in simres.keys():
+        if i.startswith('load'):
+            loads[i] = simres[i].copy()
+        elif i.startswith('gen'):
+            generator[i] = simres[i].copy()
+        elif i.startswith('Grid'):
+            external_grid[i] = simres[i].copy()
+    sys = {'loads':loads, 'generators':generator, 'external_grid':external_grid}
+    return sys
 
 # initializes Flask object
 app = Flask(__name__)
@@ -76,3 +89,4 @@ def grid():
 # Runs application
 if __name__ == '__main__':
     app.run()
+

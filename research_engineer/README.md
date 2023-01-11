@@ -6,9 +6,9 @@ Task breakdown:
 #8. Be sure the HTML Method on Postman is set to GET. Check the dropdown.
 #9. Click the 'SEND' button to view Pretty JSON result.
 
+Basic tasks: completed
 
-Extra tasks to be completed:
-1. Group nodes
+Extra tasks remaining:
 2. Add a medium Trafo to b2
 3. Add load to b3
 4. one PV plant (that consists of individual 5 PVs, all connected on a separate bus and not coupled with the load) and one external connection.
